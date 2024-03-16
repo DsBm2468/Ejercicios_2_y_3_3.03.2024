@@ -6,15 +6,27 @@
 </head>
 <body>
     <h1>CALENDARIO</h1> 
-    <section id="calendar">
-       <label>Año: </label>
-        <input class="Anio" type="number" name="Anio">
-        <br>
-        <label>Mes: </label>
-        <input class="Mes" type="number" name="Mes">
-        <br>
-        <button id="Enviar" type="button">Enviar</button>
+    <section>
+        <form name="calendar">
+            <label>Año: </label>
+            <input class="num" type="number" name="Anio">
+            <br>
+            <br>
+            <label>Mes: </label>
+            <input class="num" type="number" name="Mes">
+            <select name="mesSelect" id="mesSelect">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+            </select>
+            <br>
+            <p></p>
+            <p class="error"></p>
+            <br>
+            <button id="Enviar" type="button">Enviar</button>
+        </form>
+
     </section>
+    <section id="resultados" class="imagen"></section>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 </body>
