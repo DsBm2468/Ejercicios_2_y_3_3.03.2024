@@ -23,7 +23,7 @@ document.getElementById('mesSelect').addEventListener('change', (event) => {
     generarDias(event.target.value);
 });
 
-// SOLO DEJAR MES
+// SOLO DEJAR MES l
 
 
 /*function validacionInput(){
