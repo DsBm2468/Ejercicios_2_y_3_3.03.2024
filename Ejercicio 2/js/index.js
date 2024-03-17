@@ -5,7 +5,6 @@ const form = document.forms['calendar'];
 
 function generarDias(mes) {
     let cantidadDedias = (new Date(2024, mes, 0)).getDate();
-    //let cantidadDedias=(new Date(Anio,Mes,0)).getDate();
     let dias = [];
     for (let i = 1; i <= cantidadDedias; i++) {
         dias.push(i);
@@ -23,7 +22,9 @@ document.getElementById('mesSelect').addEventListener('change', (event) => {
     generarDias(event.target.value);
 });
 
-// SOLO DEJAR MES l
+
+
+
 
 
 /*function validacionInput(){

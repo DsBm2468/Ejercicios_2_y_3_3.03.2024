@@ -8,13 +8,27 @@ td, th{
     padding: 10px;
 }*/
 
+.body{
+    font-align:center;
+}
+
 .ejemplo{
-    width: 190px;
-    height: 250px;
-    margin-block: 10px;/**10px*/
-    margin-inline: 22px;/**30px*/
+    width: 126px;
+    height: 190px;
+    margin-block: 10px;
+    margin-inline: 15px;
     padding: 16px;
     border: 1px solid #000;
+    
+
+    /**width: 190px;
+    height: 250px;
+    margin-block: 10px;          10px
+    margin-inline: 22px;/**    30px
+    padding: 16px;
+    border: 1px solid #000;*/
+
+
    /* width: 150px;
     height: 250px;
     /**margin: 19px;
