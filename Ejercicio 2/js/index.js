@@ -13,13 +13,30 @@ function generarDias(mes) {
     console.log(dias);
     document.getElementById('resultados').innerHTML = dias.map((value) => {
 
-        return '<div class="ejemplo">' + value + '</div>';
+      return '<div class="ejemplo">' + value + '</div>';
     }).join('');
+    /** const divs = document.getElementsByClassName('ejemplo');
+    [...divs].forEach(item=>{
+        item.addEventListener('click',()=>{
+            alert('okk')
+        })
+    }) */ 
 }
 
 document.getElementById('mesSelect').addEventListener('change', (event) => {
     console.log(event.target.value);
     generarDias(event.target.value);
+});
+
+document.getElementById('calendarId').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const form = document.forms['calendar'];
+    const dia = parseInt(form['dia'].value);
+    const evento = form['evento'].value;
+    const divs = document.getElementsByClassName('ejemplo');
+    console.log(divs, dia)
+    divs[dia-1].innerHTML += '<div>'+evento+'</div>';
+
 });
 
 
