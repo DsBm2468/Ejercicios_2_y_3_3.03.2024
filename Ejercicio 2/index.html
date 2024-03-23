@@ -8,12 +8,7 @@
     <h1>CALENDARIO 2024</h1>
     <section>
         <form id="calendarId" name="calendar">
-         <!--   <label>Año: </label>
-            <input class="num" type="number" name="Anio">
-            <br>
-            <br>-->
             <label>Mes: </label>
-         <!--   <input class="num" type="number" name="Mes"> -->
             <select name="mesSelect" id="mesSelect">
                 <option value="1">Enero</option>
                 <option value="2">Febrero</option>
@@ -29,19 +24,15 @@
                 <option value="12">Diciembre</option>
             </select>
             <div>
-                <label>Día</label>
+                <label>Día: </label>
                 <input type="number" name="dia" required>
             </div>
             <div>
-                <label>Evento</label>
+                <label>Evento: </label>
                 <input type="text" name="evento" required>
             </div>
             <button type="submit">Guardar</button>
-         <!--   <br>
-            <p></p>
-            <p class="error"></p>
-            <br>
-            <button id="Enviar" type="button">Enviar</button>-->
+            <button type="reset">Eliminar</button>
         </form>
     </section>
     <section id="resultados" class="imagen"></section>
