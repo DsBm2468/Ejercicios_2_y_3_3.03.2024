@@ -1,3 +1,14 @@
+/**Estructura**/
+header{
+    background-color: #87CEFA;
+    text-align: center;
+    padding: 1px;
+    font-size: 20px;
+ 
+
+
+/**Contenido**/
+}
 table{
     border: 1px solid black;
     border-collapse: collapse;
